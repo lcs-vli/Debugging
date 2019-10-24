@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 
         // The user has to be hungry, at least a little bit.
         // Then, so long as the combined values have a sum that is 15 or greater, the user will buy the cookie.
-        if hunger + appearance + smell > 15 {
+        if hunger + appearance + smell >= 15 && hunger > 0{
             outputResult.text = "You bought the cookie. Yum!"
         } else {
             outputResult.text = "No cookie today."

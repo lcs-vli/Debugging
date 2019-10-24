@@ -54,7 +54,6 @@
                     </view>
                     <connections>
                         <outlet property="inputInteger" destination="kwI-ah-LB9" id="hBX-Vr-eQJ"/>
-                        <outlet property="inputInterger" destination="kwI-ah-LB9" id="Obp-0N-070"/>
                         <outlet property="outputResult" destination="HpM-lD-Nkx" id="2wU-hu-RiK"/>
                     </connections>
                 </viewController>
