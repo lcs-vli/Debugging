@@ -37,6 +37,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="greetUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HO-NA-y4U"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-lD-Nkx" userLabel="Result">
                                 <rect key="frame" x="20" y="299" width="374" height="194"/>
@@ -49,6 +52,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputInteger" destination="kwI-ah-LB9" id="hBX-Vr-eQJ"/>
+                        <outlet property="inputInterger" destination="kwI-ah-LB9" id="Obp-0N-070"/>
+                        <outlet property="outputResult" destination="HpM-lD-Nkx" id="2wU-hu-RiK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
