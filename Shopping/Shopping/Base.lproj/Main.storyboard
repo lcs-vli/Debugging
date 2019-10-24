@@ -23,6 +23,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="decideWhetherToBuyCookie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4Z-sE-5qg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How hungry are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCI-9N-jHN" userLabel="Prompt">
                                 <rect key="frame" x="20" y="98" width="339" height="29"/>
@@ -32,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="LH4-Iy-ARb">
-                                <rect key="frame" x="74" y="135" width="231" height="30"/>
+                                <rect key="frame" x="74" y="134" width="231" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How nice does the cookie look?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9d-kt-sKh" userLabel="Prompt">
@@ -68,6 +71,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputCookieAppearance" destination="AWH-Xk-5tM" id="kdv-xw-36o"/>
+                        <outlet property="inputCookieSmell" destination="tlu-CX-PG5" id="ujy-jY-S6n"/>
+                        <outlet property="inputHunger" destination="LH4-Iy-ARb" id="ePf-YY-7JQ"/>
+                        <outlet property="outputResult" destination="AKX-jw-w5q" id="ft2-Xd-gYd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
